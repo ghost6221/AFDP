@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag-map_of_Alabama.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Food Deserts</title>
+</head>
+<style>
+    :root {
+        --black: rgb(48,48,48);
+        --fontheading: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        --fonttext: Futura,Trebuchet MS,Arial,sans-serif;      
+    }
+
+    h1 {
+            position: -webkit-sticky; 
+            position: sticky; 
+            top: 0;
+            padding-top: 50px;
+            padding-bottom: 20px; 
+            margin: 0; }
+
+    ul {
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            background-color: var(--black); 
+            margin: 0;
+            padding: 40px;
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 0;  }
+
+    li 
+            {float: left;}
+        
+    li a {
+            font-size: 200%;
+            color: whitesmoke;
+            word-spacing: 0px;
+            text-align: left;
+            padding-left: 250px;
+            text-decoration: none;
+            font-family: tahoma;
+            display: block;
+        }
+
+    li a:hover {
+            text-decoration: overline;
+            background-color: var(--black);
+        }
+
+    #linkhome {
+            display:block;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+    #linkhome:hover {
+            text-decoration: overline;
+    }
+
+    footer {
+            background-color: var(--black);
+            color: whitesmoke;
+            font-family: tahoma;
+            font-size: 150px;
+            padding-top: 120px;
+            padding-left: 300px;
+            border-style: hidden hidden solid hidden;
+            border-color: red;
+            border-width: 50px;
+            margin: 0px;
+        }
+
+
+        #footerp1 {
+            vertical-align: super;
+            display:inline;
+            padding-bottom: 0px;
+            padding-top: -10px;
+            padding-left: 20px;
+            border-right-style: solid;
+            padding-right: 90px;
+        }
+
+        #footer_img {
+            width: 150px;
+        }
+
+        #imgus {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            display:block;
+            margin-bottom: 100px;
+            border-style: none;
+            margin-top: 90px;
+            height: 600px;
+            width: 1000px;
+        }
+
+        h2 {
+            font-size: 100px;
+            font-family: var(--fonttext);
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 50px;
+            font-family: var(--fonttext);
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        #highlight {
+            background-color:yellow;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-family: var(--fonttext);
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        h5 {
+            border-bottom-style: solid;
+            border-color: red;
+            border-width: 5px;
+            margin-left: 600px;
+            margin-right: 600px;
+            margin-bottom: 50px;
+            animation-name: underline;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes underline {
+            from {transform: scaleX(0);}
+            to {transform: scaleX(1);}
+        }
+
+        #def {
+            padding-left: 500px;
+            margin-top: -70px;
+            font-family: var(--fonttext);
+            font-style: italic;
+            font-size: 15px;
+
+        }
+
+        #warning {
+            padding-left: 500px;
+            margin-top: 0px;
+            font-family: var(--fonttext);
+            font-style: italic;
+            font-size: 15px;
+        }
+
+       
+
+</style>
+<body style="background-color: whitesmoke;"> 
+    <h1 style="font-size:300%; font-family:tahoma; text-align:center; background-color:red; color:whitesmoke" > <a id="linkhome" href="http://127.0.0.1:5500/AFDP.html" target="_self">ALABAMA FOOD DESERTS PROJECT.</a></h1> 
+    <ul>
+        <li><a href="http://127.0.0.1:5500/AFDP_US.html">FOOD DESERTS IN THE US</a></li>
+        <li><a href="http://127.0.0.1:5500/AFDP_interactivemap.html">AFDP MAP</a></li>
+        <li><a href="http://127.0.0.1:5500/AFDP_about.html">ABOUT</a></li>
+    </ul>
+
+    <h2> Food Deserts across US States</h2>
+
+    <h5> </h5>
+
+    <h3> According to the US Department of Agriculture, up to <span id="highlight"> 53.6 million</span> Americans, or <span id="highlight"> 17.4 percent</span> of the U.S. population, have low income and low access to healthy food.</h3>\
+
+    <h4> (hover your mouse over any <span id="highlight" >state</span> to see food desert info)</h4>
+
+    <iframe id="imgus" src="http://127.0.0.1:5500/mapusafinal.html" title="USA"></iframe>
+
+    <p id="def"> sources: United States Department of Agriculture (USDA), Feeding Texas, <br> New Mexico's Indicator-Based Information System, Feeding America, DC Policy Center</p>
+
+    <p id="warning"> map shown may have faulty data due to insufficient sources </p>
+
+
+
+    <footer> <img id= "footer_img" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag-map_of_Alabama.svg" alt="AL"> 
+        <p id= "footerp1">AFDP.</p> 
+
+</body>
+</html>

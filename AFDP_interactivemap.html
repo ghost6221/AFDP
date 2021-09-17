@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag-map_of_Alabama.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+</head>
+<style>
+        :root {
+        --black: rgb(48,48,48);
+        --fontheading: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        --fonttext: Futura,Trebuchet MS,Arial,sans-serif;     
+    }
+
+        h1 {
+            position: -webkit-sticky; 
+            position: sticky; 
+            top: 0;
+            padding-top: 50px;
+            padding-bottom: 20px; 
+            margin: 0; }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            background-color: var(--black); 
+            margin: 0;
+            padding: 40px;
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 0;  }
+
+        li 
+            {float: left;}
+        
+        li a {
+            font-size: 200%;
+            color: whitesmoke;
+            word-spacing: 0px;
+            text-align: left;
+            padding-left: 250px;
+            text-decoration: none;
+            font-family: tahoma;
+            display: block;
+        }
+
+        li a:hover {
+            text-decoration: overline;
+            background-color: var(--black);
+        }
+
+        #linkhome {
+            display:block;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        #linkhome:hover {
+            text-decoration: overline;
+        }
+
+        footer {
+            background-color: var(--black);
+            color: whitesmoke;
+            font-family: tahoma;
+            font-size: 150px;
+            padding-top: 120px;
+            padding-left: 300px;
+            border-style: hidden hidden solid hidden;
+            border-color: red;
+            border-width: 50px;
+            margin: 0px;
+            clear:both;
+        }
+
+
+        #footerp1 {
+            vertical-align: super;
+            display:inline;
+            padding-bottom: 0px;
+            padding-top: -10px;
+            padding-left: 20px;
+            border-right-style: solid;
+            padding-right: 90px;
+        }
+
+        #footer_img {
+            width: 150px;
+        }
+
+        #imgal {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            display:block;
+            margin-bottom: 100px;
+            border-style: none;
+            margin-top: 90px;
+            height: 700px;
+            width: 1000px;
+        }
+
+        h2 {
+            font-size: 100px;
+            font-family: var(--fonttext);
+            text-align: center;
+        }
+
+        h5 {
+            border-bottom-style: solid;
+            border-color: red;
+            border-width: 5px;
+            margin-left: 600px;
+            margin-right: 600px;
+            margin-bottom: 50px;
+            animation-name: underline;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes underline {
+            from {transform: scaleX(0);}
+            to {transform: scaleX(1);}
+        }
+
+        h3 {
+            font-size: 50px;
+            font-family: var(--fonttext);
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        #highlight {
+            background-color:yellow;
+        }
+
+        #def {
+            padding-left: 500px;
+            margin-top: -70px;
+            font-family: var(--fonttext);
+            font-style: italic;
+            font-size: 15px;
+
+        }
+
+        h4 {
+            font-size: 20px;
+            font-family: var(--fonttext);
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        #underline {
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+
+        #input {
+            font-family: var(--fonttext);
+            font-size: 40px;
+            margin-top: 100px;
+            padding-left: 200px;
+        }
+
+        form {
+            margin-left: 200px;
+            font-family: var(--fonttext);
+            display: block;
+            font-size: 25px;
+            border-left-style: solid;
+            border-color: red;
+            border-width: 10px;
+            padding-left: 50px;
+
+        }
+
+        #map2 {
+            float: right;
+            margin-top: -100px;
+        }
+
+        input[type=submit] {
+            float: left;
+            transition: 0.5s;
+        }
+
+        input[type=submit]:hover {
+            background-color: yellow;
+        }
+
+        input[type=text] {
+            padding: 12px 20px;
+            transition: 0.5s;
+            height:50px; 
+            border-style:solid; 
+            border-color:grey; 
+            border-width: 2px;
+            font-size: 30px;
+        }
+
+        input[type=text]:focus {
+            border-width: 5px;
+        }
+
+        #divider {
+            border-bottom: solid;
+            border-color:var(--black);
+            border-width: 2px;
+            margin-top: 100px;
+            margin-left: 700px;
+            margin-right: 700px;
+        }
+        
+</style>
+<body style="background-color: whitesmoke;"> 
+    <h1 style="font-size:300%; font-family:tahoma; text-align:center; background-color:red; color:whitesmoke" > <a id="linkhome" href="http://127.0.0.1:5500/AFDP.html" target="_self">ALABAMA FOOD DESERTS PROJECT.</a></h1> 
+    <ul>
+        <li><a href="http://127.0.0.1:5500/AFDP_US.html">FOOD DESERTS IN THE US</a></li>
+        <li><a href="http://127.0.0.1:5500/AFDP_interactivemap.html">AFDP MAP</a></li>
+        <li><a href="http://127.0.0.1:5500/AFDP_about.html">ABOUT</a></li>
+    </ul> 
+
+    <h2> Interactive Map of Alabama </h2>
+    <h5></h5>
+    <h3> Alabama, according to the United States Department of Agriculture, has close to <span id="highlight"> 2 million</span> people who live in food deserts.</h3>
+    <br>
+    <h4> (hover your mouse over any <span id="highlight">county</span> to see food desert info)</h4>
+ 
+    <iframe id="imgal" src="http://127.0.0.1:5500/mapalabama.html" title="AL"></iframe>
+
+    <p id="def"> sources: United States Department of Agriculture (USDA), US Census Bureau </p>
+
+    <h3 id="underline"> Alabama population: <span id="highlight">4.903 million</span> (2019) <br> Alabama poverty rate: <span id="highlight">16.8</span> (2019) </h3>
+
+    <p id="divider"></p>
+
+    <p id="input"> Is there an organization missing on the map? <br> Submit one and join the Cause. </p> <br>
+
+    <img id="map2" src="https://alfba.org/wp-content/uploads/2020/05/ALFBA-Member-Food-Banks.jpg" height="800" alt="ALFB"> 
+
+    <form action="/action_page.php">
+        <label for="Oname" style="color: var(--black);">> Name of Organization</label><br><br>
+        <input type="text" 
+        id="Oname" name="Oname" 
+        style="width:500px;" 
+        placeholder="Food Bank of Central Alabama" required><br><br>
+        <label for="County" 
+        style="color: var(--black);">> County</label><br><br>
+        <input type="text" 
+        id="County" 
+        name="County" 
+        style="width:400px;"
+        placeholder="Mobile, Jefferson" required ><br><br>
+        <label for="Website" style="color: var(--black);">> Website (optional)</label><br><br>
+        <input type="text" 
+        id="Website" 
+        name="Website" 
+        style="width:500px;"
+        placeholder="www.foodsecurity.com"><br><br>
+        <input type="submit" value="Submit" style="font-size: 20px; width:200px; height:50px;color: var(--black);" >
+
+    </form>
+
+
+    <footer> <img id= "footer_img" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag-map_of_Alabama.svg" alt="AL"> 
+        <p id= "footerp1">AFDP.</p> 
+    
+</body>
+</html>

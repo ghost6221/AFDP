@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag-map_of_Alabama.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFDP</title>
+    <style>
+        :root {
+            --black: rgb(48,48,48);
+            --fonttext: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            --fontheading: Futura,Trebuchet MS,Arial,sans-serif; 
+        }
+
+        h1 {
+            position: -webkit-sticky; 
+            position: sticky; 
+            top: 0;
+            padding-top: 50px;
+            padding-bottom: 20px; 
+            margin: 0; 
+        }
+  
+        img {
+            margin: 0;
+            opacity: 1;
+            animation-name: img;
+            animation-duration: 2s;
+        }
+
+        @keyframes img {
+            from {opacity: 0;}
+            to {opacity: 1;}
+}
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            background-color: var(--black); 
+            margin: 0;
+            padding: 40px;
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 0;  
+        }
+
+        li 
+            {float: left;}
+        
+        li a {
+            font-size: 200%;
+            color: whitesmoke;
+            word-spacing: 0px;
+            text-align: left;
+            padding-left: 250px;
+            text-decoration: none;
+            font-family: tahoma;
+            display: block;
+        }
+
+        li a:hover {
+            text-decoration: overline;
+            background-color: var(--black);
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 220%;
+            font-family: tahoma;
+            padding-left: 100px;
+            padding-right: 300px;
+            padding-top: 80px;
+            padding-bottom: 50px;
+        }
+            
+        div {
+            margin: 0 90px 20px 50px;
+            font-size: 200%;
+            font-family: var(--fontheading); 
+            background-color: var(--black);
+            color: whitesmoke;
+            padding-left: 150px;
+            padding-top: 20px;
+            padding-bottom:20px;
+            border-style: hidden hidden solid solid;
+            border-color: red;
+            border-width: 10px;
+            font-weight:bold;
+        }
+
+        p {
+            font-family: tahoma;
+        }
+        
+        div > p {
+            display: none;
+            padding-right: 100px;
+            font-size: 30px;
+            font-weight:normal;
+        }
+
+        div:hover p {
+            display:block;
+        }
+
+        div:hover ul {
+            display:block;
+        }
+        
+        h3 {
+            margin: 0;
+            font-size: 220%;
+            font-family: tahoma;
+            padding-left: 100px;
+            padding-right: 300px;
+            padding-top: 0.5px;
+            padding-bottom: 50px;
+
+        }
+        h4 {
+            border-bottom-style: solid;
+            border-color: red;
+            border-width: 5px;
+            margin-left: 600px;
+            margin-right: 600px;
+        }
+
+        h5 {
+            border-bottom-style: solid;
+            border-color: red;
+            border-width: 5px;
+            margin-left: 600px;
+            margin-right: 600px;
+            margin-bottom: 50px;
+        }
+
+        a {
+            color: whitesmoke;
+            transition: 0.3s;
+        }
+        
+        a:hover {
+            background-color:red;
+            text-decoration: none;
+        }
+
+        #ul_donate {
+            display:none;    
+            font-weight: normal; 
+            list-style-type: square;
+        }
+
+        div:hover #ul_donate {
+            display:block;
+        }
+
+        #linkhome {
+            display:block;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        #linkhome:hover {
+            text-decoration: overline;
+        }
+
+        #p_videos {
+            display:block;
+            padding-left: 380px;
+            background-color: var(--black);
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+
+        #favicon {
+            display:block;
+        }
+        
+        footer {
+            background-color: var(--black);
+            color: whitesmoke;
+            font-family: tahoma;
+            font-size: 150px;
+            padding-top: 120px;
+            padding-left: 300px;
+            border-style: hidden hidden solid hidden;
+            border-color: red;
+            border-width: 50px;
+            margin: 0px;
+        }
+
+
+        #footerp1 {
+            vertical-align: super;
+            display:inline;
+            padding-bottom: 0px;
+            padding-top: -10px;
+            padding-left: 20px;
+            border-right-style: solid;
+            padding-right: 90px;
+        }
+
+        #footer_img {
+            width: 150px;
+        }
+
+        #bold {
+            font-weight: bold;
+        }
+        
+        #credit1 {
+            padding-left: 200px;
+            font-family: tahoma;
+            font-size: 12px;
+            color: var(--black);
+        }
+
+    </style>
+
+</head>
+<body style="background-color: whitesmoke;"> 
+    <h1 style="font-size:300%; font-family:tahoma; text-align:center; background-color:red; color:whitesmoke" > <a id="linkhome" href="http://127.0.0.1:5500/AFDP.html" target="_self">ALABAMA FOOD DESERTS PROJECT.</a></h1> 
+    <ul>
+        <li><a href="http://127.0.0.1:5500/AFDP_US.html">FOOD DESERTS IN THE US</a></li>
+        <li><a href="http://127.0.0.1:5500/AFDP_interactivemap.html">AFDP MAP</a></li>
+        <li><a href="http://127.0.0.1:5500/AFDP_about.html">ABOUT</a></li>
+    </ul>
+
+    <img src= "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/12/12/10/alabama-poverty1-0.jpg" 
+    alt="Wandering" 
+    width=1887px 
+    height=1150px>
+
+    <p id="credit1"> Provided by Getty Images </p>
+    <h2> The Alabama Food Deserts Project (AFDP) was created to shed light about the numerous food deserts that exist in Alabama and to 
+        help fundraise for organizations dedicated to fighting food deserts. </h2>
+    <h3> The AFDP aims for a reality where each Alabamian has equal access to affordable and nutritious food.</h2>
+    
+    <h4> </h4>
+
+    <p id="p_videos"><iframe width="560" height="315" align= "padding-left" src="https://www.youtube.com/embed/kQeorPkPLmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" align= "padding-right" src="https://www.youtube.com/embed/E6ZpkhPciaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+    <h5> </h5>
+
+    <div> What are food deserts?
+        <p> A food desert is an area where communities have limited access to affordable and nutritional food. Factors vary for these circumstances, but it mostly stems having limited income, living far away from grocery stores, and a lack of knowledge of nutritional food due to a lack of education.  
+            The US Department of Agriculture (USDA) <a href="https://www.medicalnewstoday.com/articles/what-are-food-deserts" target="_blank">defines</a> a food desert as an area, 
+            "that has either a poverty rate greater than or equal to 20% or a median family income not exceeding 80% of the median family income in urban areas,
+             or 80% of the statewide median family income in nonurban areas." 
+            According to USDA criteria, Food deserts in urban areas typically have at least 500 people who live more than 1 mile away from the nearest grocery store. In rural areas, food deserts have at least 500 people who live more than 10 miles away from the nearest grocery store. 
+        </p> </div>
+
+    <div> Why are food deserts bad?
+        <p> Communities who live in food deserts do not always have convenient access to knowledge of nutrition and affordable healthy food options, and therefore are more <a href="https://www.aum.edu/continuingeducation/wp-content/uploads/sites/9/2020/11/Food-Deserts-in-Alabama-1.pdf" target="_blank">prone</a> to eating at low-cost fast food as their main source of food. 
+            These conditions increase the likelihood of type II diabetes, cardiovascular disease, and others in these communities. In fact, Alabama
+            is one of the top states with the highest adult diabetes rate in the US, and research has shown that food deserts are one of the leading factors in this. 
+            There have also been links between nutritional food insecurity and the increase of gun violence, 
+            as an <a href="https://www.thetrace.org/newsletter/connecting-food-insecurity-and-gun-violence/" target="_blank">article</a> in St. Louis, Missouri found in 2020 that out of the 271 homicides that occurred in the city, 70% occured in areas designated as food deserts. Experts
+            suggest that the main reason for this outcome was the lack of a nutritional diet as well as hunger that is needed to face stressful situations that is associated with poverty.      </p> </div>
+
+    <div> How much people in Alabama live in food deserts?
+        <p>Close to <a href="https://www.aum.edu/continuingeducation/wp-content/uploads/sites/9/2020/11/Food-Deserts-in-Alabama-1.pdf" target="_blank">2 million</a> Alabamian residents live in a food desert, with about 150,000 living in Birmingham. That's close to 1/2 of Alabama's 4 million population! </p> </div>
+    <div> Why is this an issue? 
+        <p> There are many factors that influenced the development of food deserts, but prevalent factors include the effects of systematic racism in the US that allowed widespread poverty into racial lines and local crime rates that deter businesses and organizations from operating efficiently.  
+                <p><iframe width="560" height="315" align= "center" src="https://www.youtube.com/embed/dDbENx9c3Fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        </p> </div>
+
+    <div> Will opening a supermarket or food market in a food desert solve the issue? 
+        <p> <a href="https://journalistsresource.org/environment/food-desert-diet-obesity-supermarket-research/" target="_blank">No</a>, not necessarily. While communities benefit from new openings of nearby affordable grocery stores, 
+            diets do not automatically improve dramatically, despite claims. These efforts against food deserts also includes educating others on nutrition
+            and healthy foods that helps reduce the dietary gap between the rich and the poor. A two-pronged approach to this issue requires both the opening of new grocery stores, community farms, etc that provide
+            affordable and healthy foods and educating others about the merits of a healthy diet on a community-wide scale. </p> </div>
+    <div> What can we do to help fight this issue? 
+        <p>Many solutions are mostly oriented over policy-making by legislators. 
+            Increasing federal and state funding to food programs and 
+            mass media on healthy food choices are the most important to pursue. In fact, Governor Kay Ivey has made some progress 
+            in these <a href="http://www.media.alabama.gov/AgencyTemplates/adeca/adeca_pr6.aspx?id=12518" target="_blank">efforts</a> . 
+            However, you as an individual or group can do a lot in combating 
+            food deserts. 
+            Many efforts include but are not limited to, 
+            
+            <ul id= "ul_donate" > 
+                <li> Donating to businesses and organizations who reserve time and money to fight food deserts.</li> 
+                <li> Volunteering/Working at businesses and organizations who reserve time and money to fight food deserts.</li>
+                <li> Raising awareness on nutritional foods and healthy diets, especially to those who live in low-income communities, whether it be close friends, family, and others. </li>
+                <li> Emailing/contacting your local congressman/congresswoman to raise awareness about this issue and its solutions.</li>
+            </ul> 
+        
+        <p id= "bold">More information is provided in "AFDP MAP". </p> 
+    </p> </div>
+    <div> How has COVID-19 impacted food deserts?
+        <p> Unfortunately, COVID-19 has only worsened the food insecurity 
+            <a href="https://www.brookings.edu/research/beyond-food-deserts-america-needs-a-new-approach-to-mapping-food-insecurity/" target="_blank">crisis</a> in the United States, 
+            creating more food deserts. Dramatic increase in unemployment, financial insecurity, and disrupted food chains has doubled food insecurity in US households. Even worse, 
+            POC communities are most impacted by COVID-19, as the <a href="https://www.canr.msu.edu/news/how-the-covid-19-pandemic-affects-food-deserts" target="_blank">CDC</a> has recorded
+            4.7 times more COVID infections in POC communities than white communitites. Often times, POC communites have high rates of diabetes, weak immune systems, hypertension, heart disease, and 
+            mental illness. Among other factors, these diseases are created or impacted by low nutritional food and high food insecurity. Without a consistent supply of
+            nutritional foods into these communities, POCs and other impacted people are compromised by COVID-19, which often bolster other health issues. It's the reason why 
+            Hispanics, Blacks, and Natives experience <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/investigations-discovery/hospitalization-death-by-race-ethnicity.html" target="_blank">higher</a> rates of hospitalization and death than White and Asian communities from COVID-19. <br><br> </p> </div>
+    
+        
+    <footer> <img id= "footer_img" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag-map_of_Alabama.svg" alt="AL"> 
+        <p id= "footerp1">AFDP.</p> 
+</body>
+</html> 
