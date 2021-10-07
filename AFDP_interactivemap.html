@@ -215,6 +215,26 @@
             margin-left: 700px;
             margin-right: 700px;
         }
+
+        #contact {
+            font-size: 50px;
+            display: inline;
+        }
+
+        .volunteerbutton {
+            text-align: center;
+            background-color: yellow;
+            font-size: 40px;
+            border-color:var(--black);
+            display:block;
+            font-family: var(--fonttext);
+            margin-left: 450px;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            padding: 50px 50px 50px;
+
+        }
+
         
 </style>
 <body style="background-color: whitesmoke;"> 
@@ -235,15 +255,17 @@
 
     <p id="def"> sources: United States Department of Agriculture (USDA), US Census Bureau </p>
 
+    <button class="volunteerbutton" onclick="volunteer"> Volunteer & Donation Page </button>
+
     <h3 id="underline"> Alabama population: <span id="highlight">4.903 million</span> (2019) <br> Alabama poverty rate: <span id="highlight">16.8</span> (2019) </h3>
 
     <p id="divider"></p>
 
-    <p id="input"> Is there an organization missing on the map? <br> Submit one and join the Cause. </p> <br>
+    <p id="input"> Is there an organization missing on the map? <br> Submit one. Join the Cause. </p> <br>
 
     <img id="map2" src="https://alfba.org/wp-content/uploads/2020/05/ALFBA-Member-Food-Banks.jpg" height="800" alt="ALFB"> 
 
-    <form action="/action_page.php">
+    <form action="mailto:lmeme9420@gmail.com">
         <label for="Oname" style="color: var(--black);">> Name of Organization</label><br><br>
         <input type="text" 
         id="Oname" name="Oname" 
@@ -266,9 +288,9 @@
 
     </form>
 
-
     <footer> <img id= "footer_img" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag-map_of_Alabama.svg" alt="AL"> 
         <p id= "footerp1">AFDP.</p> 
+        <p id= "contact"> Contact at lmeme9420@gmail.com </p>
     
 </body>
 </html>
