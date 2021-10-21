@@ -74,6 +74,7 @@
             border-width: 50px;
             margin: 0px;
             clear:both;
+            margin-top: 100px;
         }
 
 
@@ -184,13 +185,10 @@
             margin-top: -100px;
         }
 
-        input[type=submit] {
-            float: left;
-            transition: 0.5s;
-        }
-
-        input[type=submit]:hover {
-            background-color: yellow;
+        #submit:hover {
+            transition: 0.2s;
+            background-color: lightblue;
+            border-color: yellow;
         }
 
         input[type=text] {
@@ -225,20 +223,63 @@
             text-align: center;
             background-color: yellow;
             font-size: 40px;
-            border-color:var(--black);
+            border: none;
             display:block;
             font-family: var(--fonttext);
-            margin-left: 450px;
             margin-top: 70px;
             margin-bottom: 70px;
             padding: 50px 50px 50px;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
+        .volunteerbutton:hover {
+            transition: 0.2s;
+            background-color: lightblue;
+            border-color: yellow;
+        }
+
+        #clickbelow {
+            font-size: 40px;
+            text-align: center;
+            font-family: var(--fonttext);
+            margin-top:100px;
+        }
+
+        #resources {
+            font-size: 80px;
+            text-align: center;
+            font-family: var(--fonttext);
+            margin-top:100px;
+            text-decoration: underline;
+        }
+
+        #submit {
+            text-align: center;
+            background-color: yellow;
+            font-size: 25px;
+            border: none;
+            display:block;
+            font-family: var(--fonttext);
+            margin-top: 10px;
+            margin-bottom: 70px;
+            padding: 20px 20px 20px;
+            display:block;
         }
 
         
 </style>
 <body style="background-color: whitesmoke;"> 
-    <h1 style="font-size:300%; font-family:tahoma; text-align:center; background-color:red; color:whitesmoke" > <a id="linkhome" href="http://127.0.0.1:5500/AFDP.html" target="_self">ALABAMA FOOD DESERTS PROJECT.</a></h1> 
+    <h1 style="
+    font-size:300%; 
+    font-family:tahoma; 
+    text-align:center; 
+    background-color:red; 
+    color:whitesmoke" > <a id="linkhome" 
+    href="http://127.0.0.1:5500/AFDP.html" 
+    target="_self">ALABAMA FOOD DESERTS PROJECT.</a></h1> 
+
     <ul>
         <li><a href="http://127.0.0.1:5500/AFDP_US.html">FOOD DESERTS IN THE US</a></li>
         <li><a href="http://127.0.0.1:5500/AFDP_interactivemap.html">AFDP MAP</a></li>
@@ -255,15 +296,39 @@
 
     <p id="def"> sources: United States Department of Agriculture (USDA), US Census Bureau </p>
 
-    <button class="volunteerbutton" onclick="volunteer"> Volunteer & Donation Page </button>
-
     <h3 id="underline"> Alabama population: <span id="highlight">4.903 million</span> (2019) <br> Alabama poverty rate: <span id="highlight">16.8</span> (2019) </h3>
+
+    <p id="divider"></p>
+
+    <p id="resources"> Resources </p>
+
+    <p id="clickbelow"> Click below to know how you can help your local communities. </p>
+
+    <input type="button" class="volunteerbutton"
+    value="Volunteer & Donation Page" 
+    onclick="myFunction1()"></input>
+
+    <script> 
+        function myFunction1() {
+            window.open("http://127.0.0.1:5500/AFDP_organizations.html");
+        }
+    </script>
+
+    <input type="button" class="volunteerbutton" 
+    value="Community Garden Page" 
+    onclick="myFunction2()"></input>
+
+    <script> 
+        function myFunction2() {
+            window.open("http://127.0.0.1:5500/AFDP_garden.html");
+        }
+    </script>
 
     <p id="divider"></p>
 
     <p id="input"> Is there an organization missing on the map? <br> Submit one. Join the Cause. </p> <br>
 
-    <img id="map2" src="https://alfba.org/wp-content/uploads/2020/05/ALFBA-Member-Food-Banks.jpg" height="800" alt="ALFB"> 
+    <img id="map2" src="https://alfba.org/wp-content/uploads/2020/05/ALFBA-Member-Food-Banks.jpg" height="500" alt="ALFB"> 
 
     <form action="mailto:lmeme9420@gmail.com">
         <label for="Oname" style="color: var(--black);">> Name of Organization</label><br><br>
@@ -272,25 +337,30 @@
         style="width:500px;" 
         placeholder="Food Bank of Central Alabama" required><br><br>
         <label for="County" 
-        style="color: var(--black);">> County</label><br><br>
+        style="color: var(--black);">> Phone Number</label><br><br>
         <input type="text" 
-        id="County" 
-        name="County" 
+        id="PhoneNumber" 
+        name="PhoneNumber" 
         style="width:400px;"
-        placeholder="Mobile, Jefferson" required ><br><br>
+        placeholder="###-###-####" required ><br><br>
+        <label style="color: var(--black);">> Address</label><br><br>
+        <input type="text" 
+        id="Address" 
+        name="Address" 
+        style="width:400px;"
+        placeholder="8920 Alabama Street" required ><br><br>
         <label for="Website" style="color: var(--black);">> Website (optional)</label><br><br>
         <input type="text" 
         id="Website" 
         name="Website" 
         style="width:500px;"
         placeholder="www.foodsecurity.com"><br><br>
-        <input type="submit" value="Submit" style="font-size: 20px; width:200px; height:50px;color: var(--black);" >
+        <input id="submit" type="submit" value="Submit" >
 
     </form>
 
     <footer> <img id= "footer_img" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag-map_of_Alabama.svg" alt="AL"> 
         <p id= "footerp1">AFDP.</p> 
-        <p id= "contact"> Contact at lmeme9420@gmail.com </p>
     
 </body>
 </html>
